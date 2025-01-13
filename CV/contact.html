@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Doruk Beduk</title>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <p>Doruk Beduk</p>
+        <p><a href="index.html">About Doruk</a></p>
+    </nav>
+    <section>
+        <h1>Contact Doruk Beduk</h1>
+        <p>Prince Ave, Athens, GA 30601 &bull; +1 404 513 6425 &bull; doruk@uga.edu</p>
+    </section>
+    
+    <hr>
+
+    <form action="http://127.0.0.1:5500/CV/thankyou.html" method="post">
+        <!-- Redirect to thankyou.html after submission -->
+        <input type="hidden" name="_redirect" value="thankyou.html">
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email: </label>
+        <input type="email" id="email" email="email"required>
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" style="width:300px;height:100px;"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+        <p>
+            <a href="index.html"> &copy; Doruk Beduk </a> &#8226;
+            <a href="https://www.linkedin.com/in/dorukbeduk/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+        </p>
+    </footer>
+
+</body>
+</html>
