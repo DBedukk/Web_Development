@@ -5,19 +5,29 @@ body {
 
 /* Nav Styles */
 nav {
-    background: #dedada;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    background-color: #f4f4f4; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 nav p, nav a {
-    margin: 0;
+    margin: 0; 
+    font-size: 1.1em; /* Slightly increase font size for better readability */
 }
 
-nav a {}
+nav a {
+    color: #4caf50; 
+    text-decoration: none; 
+    font-weight: bold; 
+    padding: 5px 10px; 
+}
 
-nav a:hover {}
+nav a:hover {
+    color: #004d40; /* Change to darker green on hover */
+    text-decoration: underline; /* Add underline to emphasize hover state */
+}
 
 /* Footer Styles */
 footer {
@@ -36,18 +46,39 @@ footer a {
 }
 
 footer a:hover {
-    color: #4caf50; /* Green color on hover */
-    text-decoration: underline; /* Adds underline on hover */
+    color: #4caf50; 
+    text-decoration: underline; 
 }
 
 /* Splash Section */
-.splash {}
+.splash {
+    background-color: #e0f7fa; /* Light teal background */
+    padding: 20px; /* Add space inside the section */
+    text-align: center; /* Center the text and content */
+    border-bottom: 2px solid #00796b; /* Add a separator for visual appeal */
+    border-top: 2px solid #00796b;
+}
 
-.splash h1 {}
+.splash h1 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 2.5em; /* Increase font size for prominence */
+    color: #00796b; /* Green color for the heading */
+    margin-bottom: 2px; /* Add space below the heading */
+}
 
-.splash img {}
+.splash img {
+    border-radius: 50%; /* Make the headshot circular */
+    border: 3px solid #004d40; /* Add a dark green border */
+    width: 150px; /* Adjust size of the headshot */
+    height: 150px;
+    object-fit: cover;
+    margin: 15px 0; /* Add space above and below the image */
+}
 
-.splash p {}
+.splash p {
+    font-size: 1.2em; /* Make text slightly larger */
+    color: #333; /* Use a dark gray for text */
+}
 
 /* Horizontal Rules */
 hr {}
