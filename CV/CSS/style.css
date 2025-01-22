@@ -1,21 +1,44 @@
 /* General Styles */
-body {}
+body {
+    margin: 0;
+}
 
 /* Nav Styles */
-nav {}
+nav {
+    background: #dedada;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
 
-nav p, nav a {}
+nav p, nav a {
+    margin: 0;
+}
 
 nav a {}
 
 nav a:hover {}
 
 /* Footer Styles */
-footer {}
+footer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px; 
+}
 
-footer a {}
+footer a {
+    color: #fff; 
+    text-decoration: none; 
+    margin: 0 10px; 
+}
 
-footer a:hover {}
+footer a:hover {
+    color: #4caf50; /* Green color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
 
 /* Splash Section */
 .splash {}
