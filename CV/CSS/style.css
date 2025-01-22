@@ -14,11 +14,11 @@ nav {
 
 nav p, nav a {
     margin: 0; 
-    font-size: 1.1em; /* Slightly increase font size for better readability */
+    font-size: 1.1em; 
 }
 
 nav a {
-    color: #4caf50; 
+    color: #00796b; 
     text-decoration: none; 
     font-weight: bold; 
     padding: 5px 10px; 
@@ -37,6 +37,7 @@ footer {
     background-color: #333; 
     color: #fff; 
     padding: 10px; 
+    border-top: 4px solid #333;
 }
 
 footer a {
@@ -52,36 +53,42 @@ footer a:hover {
 
 /* Splash Section */
 .splash {
-    background-color: #e0f7fa; /* Light teal background */
-    padding: 20px; /* Add space inside the section */
-    text-align: center; /* Center the text and content */
-    border-bottom: 2px solid #00796b; /* Add a separator for visual appeal */
+    background-color: #e0f7fa; 
+    padding: 20px; 
+    text-align: center; 
+    border-bottom: 2px solid #00796b; 
     border-top: 2px solid #00796b;
 }
 
 .splash h1 {
-    font-family: 'Roboto', sans-serif; 
-    font-size: 2.5em; /* Increase font size for prominence */
-    color: #00796b; /* Green color for the heading */
-    margin-bottom: 2px; /* Add space below the heading */
+    font-family: "Newsreader", serif;
+    font-size: 2.5em; 
+    color: #00796b; 
+    margin-bottom: 2px; 
 }
 
 .splash img {
-    border-radius: 50%; /* Make the headshot circular */
-    border: 3px solid #004d40; /* Add a dark green border */
-    width: 150px; /* Adjust size of the headshot */
+    border-radius: 50%; 
+    border: 3px solid #004d40; 
+    width: 150px; 
     height: 150px;
     object-fit: cover;
-    margin: 15px 0; /* Add space above and below the image */
+    margin: 15px 0; 
 }
 
 .splash p {
-    font-size: 1.2em; /* Make text slightly larger */
-    color: #333; /* Use a dark gray for text */
+    font-size: 1.2em;
+    color: #333; 
 }
 
 /* Horizontal Rules */
-hr {}
+hr {
+    border: 0; /* Remove the default border */
+    border-top: 3px solid #00796b; /* Add a 3px solid green border at the top */
+    border-radius: 5px; /* Add rounded edges */
+    width: 50%; /* Reduce the width for a centered, modern look */
+    margin: 20px auto; /* Add spacing and center it horizontally */
+}
 
 /* Sections */
 section {}
