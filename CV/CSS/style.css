@@ -77,8 +77,9 @@ footer a:hover {
 }
 
 .splash p {
-    font-size: 1.2em;
-    color: #333; 
+    margin-left: 0; /* Reset the margin for the splash section's <p> elements */
+    text-align: center; /* Center the address and info line */
+    line-height: 1.4; /* Slightly reduce the line spacing */
 }
 
 /* Horizontal Rules */
@@ -91,13 +92,26 @@ hr {
 }
 
 /* Sections */
-section {}
+section {
+    padding: 10px;
+}
 
 /* Section Headings */
-section h2 {}
+section h2 {
+    font-family: "Newsreader", serif;
+    color: #00796b;
+    font-size: 2em; 
+}
 
 /* Paragraph Styles */
-section p {}
+section p {
+    font-size: 1.2em; /* Make the text slightly larger */
+    line-height: 1.6; /* Improve readability with increased line height */
+    color: #333; /* Use a neutral dark gray for the text */
+    margin-left: 20px; /* Indent the paragraph to separate it from the edges */
+    margin-bottom: 20px; /* Add spacing between this and the next element */
+    text-align: justify; /* Justify the text for a clean, professional look */
+}
 
 /* link styles */
 section a {}
