@@ -153,26 +153,25 @@ dl dd {
 /* Skills Section Grid Layout */
 section.skills dl {
     display: grid; /* Enable grid layout */
-    grid-template-columns: 1fr 2fr; /* Two columns: 1/3 for category, 2/3 for skill details */
-    gap: 10px 20px; /* Space between rows and columns */
-    align-items: center; /* Align items vertically in the center */
+    grid-template-columns: 1fr; /* Single column layout */
+    row-gap: 15px; /* Add spacing between rows */
+    align-items: start; /* Align items at the top */
 }
 
-/* Left Column (Categories) */
+/* Categories and Details on the Same Line */
 section.skills dl dt {
     font-weight: bold; /* Make category titles bold */
     color: #00796b; /* Green color for categories */
-    text-align: left; /* Align categories to the left */
+    display: inline; /* Ensure the category stays inline */
+    margin-right: 5px; /* Add small spacing after the colon */
 }
 
-/* Right Column (Skill Details) */
 section.skills dl dd {
-    margin-left: 0; /* Reset default indentation */
-    text-align: right; /* Align skill details to the right */
+    display: inline; /* Ensure the details are inline */
+    margin: 0; /* Remove default margins */
     color: #333; /* Neutral dark gray for details */
     line-height: 1.6; /* Improve readability */
 }
-
 
 section.honors dl {
     grid-template-columns: 3fr 1fr; /* Two columns: larger left column for term, smaller right column for date */
