@@ -47,7 +47,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #4caf50; 
+    color: #00796b; 
     text-decoration: underline; 
 }
 
@@ -78,17 +78,18 @@ footer a:hover {
 
 .splash p {
     margin-left: 0; /* Reset the margin for the splash section's <p> elements */
-    text-align: center; /* Center the address and info line */
-    line-height: 1.4; /* Slightly reduce the line spacing */
+    text-align: center; 
+    line-height: 1.4; 
+    font-size: 1.2em;
 }
 
 /* Horizontal Rules */
 hr {
-    border: 0; /* Remove the default border */
-    border-top: 3px solid #00796b; /* Add a 3px solid green border at the top */
-    border-radius: 5px; /* Add rounded edges */
-    width: 50%; /* Reduce the width for a centered, modern look */
-    margin: 20px auto; /* Add spacing and center it horizontally */
+    border: 0; 
+    border-top: 3px solid #00796b; 
+    border-radius: 5px; 
+    width: 50%; 
+    margin: 20px auto; 
 }
 
 /* Sections */
@@ -105,43 +106,275 @@ section h2 {
 
 /* Paragraph Styles */
 section p {
-    font-size: 1.2em; /* Make the text slightly larger */
-    line-height: 1.6; /* Improve readability with increased line height */
-    color: #333; /* Use a neutral dark gray for the text */
-    margin-left: 20px; /* Indent the paragraph to separate it from the edges */
-    margin-bottom: 20px; /* Add spacing between this and the next element */
-    text-align: justify; /* Justify the text for a clean, professional look */
+    font-family: "Newsreader", serif;
+    line-height: 1.6; 
+    color: #333; 
+    margin-left: 20px; 
 }
 
 /* link styles */
-section a {}
-section a:hover {}
+a {
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
 
 /* List Styles */
-ul {}
+ul {
+    list-style-type: square; /* Change bullet style to squares */
+    padding-left: 30px; 
+    margin-bottom: 20px; 
+}
 
-dl {}
-dl dt{}
-dl dd{}
+dl {
+    display: grid; 
+    grid-template-rows: auto; 
+    grid-template-columns: 1fr; /* Default: single-column layout */
+    gap: 15px; 
+    margin-bottom: 20px; 
+}
+
+dl dt {
+    font-weight: bold; 
+    color: #00796b; 
+    margin-bottom: 0; 
+    text-align: left;
+}
+
+dl dd {
+    margin-left: 0; 
+    color: #333; 
+    line-height: 1.6; 
+    text-align: left; 
+}
+
+/* Skills Section Grid Layout */
+section.skills dl {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr 2fr; /* Two columns: 1/3 for category, 2/3 for skill details */
+    gap: 10px 20px; /* Space between rows and columns */
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* Left Column (Categories) */
+section.skills dl dt {
+    font-weight: bold; /* Make category titles bold */
+    color: #00796b; /* Green color for categories */
+    text-align: left; /* Align categories to the left */
+}
+
+/* Right Column (Skill Details) */
+section.skills dl dd {
+    margin-left: 0; /* Reset default indentation */
+    text-align: right; /* Align skill details to the right */
+    color: #333; /* Neutral dark gray for details */
+    line-height: 1.6; /* Improve readability */
+}
+
+
+section.honors dl {
+    grid-template-columns: 3fr 1fr; /* Two columns: larger left column for term, smaller right column for date */
+    gap: 10px 20px; /* Space between columns and rows */
+}
+
+section.honors dl dt {
+    text-align: left; /* Left-align the term */
+}
+
+section.honors dl dd {
+    text-align: right; /* Right-align the date */
+    justify-self: end; /* Push the date to the rightmost side */
+}
+
+
+/* Leadership & Experience Section Grid Layout */
+section.experience dl {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr 2fr; /* Two columns: 1/3 for left, 2/3 for right */
+    row-gap: 50px; /* Add vertical spacing between rows */
+    column-gap: 20px; /* Maintain spacing between columns */
+    margin-bottom: 20px; /* Maintain spacing below the list */
+    align-items: start; /* Align items at the top */
+}
+
+/* Left Column (Title, Role, Dates) */
+section.experience dl dt {
+    font-weight: bold; /* Make titles bold */
+    color: #00796b; /* Green color for titles */
+    margin-bottom: 5px; /* Add spacing between items in the left column */
+    text-align: left; /* Left-align all content in the left column */
+}
+
+/* Links in the Left Column */
+section.experience dl dt a {
+    color: #4385d0; /* Match the green color for titles */
+}
+
+section.experience dl dt a:hover {
+    text-decoration: underline; /* Underline link on hover */
+    color: #181a8e; /* Darker green for hover */
+}
+
+/* Right Column (Descriptions) */
+section.experience dl dd {
+    margin-left: 0; /* Reset default indentation */
+    color: #333; /* Neutral dark gray for descriptions */
+    line-height: 1.6; /* Improve readability */
+    text-align: left; /* Left-align descriptions */
+}
+
+
 
 /* Project Section */
-.three-col {}
+.three-col {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 20px; 
+}
 
-.card {}
+/* Projects Section Font Styling */
+section.projects {
+    font-family: "Newsreader", serif; /* Apply Newsreader font */
+    line-height: 1.6; 
+    color: #333; 
+}
 
-.card img {}
 
-.card h3 {}
+
+/* Card Container Styles */
+.card {
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 15px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex; /* Flex layout to align content */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start; /* Align items to the top */
+}
+
+/* Image Styles for Cards */
+.card img {
+    width: 100%; /* Make the image fill the card's width */
+    height: 150px; 
+    object-fit: cover; /* Crop images to fit the dimensions without distortion */
+    border-radius: 6px; 
+    margin-bottom: 10px; 
+}
+
+/* Heading Styles for Cards */
+.card h3 {
+    font-family: "Newsreader", serif; 
+    font-size: 1.5em; 
+    color: #00796b; 
+    margin-bottom: 10px; 
+}
+
 
 /* Contact Page Styles */
-.one-col {}
+.one-col {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 20px auto; 
+    padding: 20px; 
+    max-width: 600px; 
+}
 
-form {}
+/* Form Container */
+form {
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+}
 
-form input, form textarea {}
+/* Input and Textarea Styling */
+form input, form textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    color: #333; 
+    background-color: #f9f9f9; 
+}
 
-form input:focus, form textarea:focus {}
+/* Focus Styling for Input and Textarea */
+form input:focus, form textarea:focus {
+    border-color: #00796b; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5); 
+}
 
-form button {}
+/* Submit Button Styling */
+form button {
+    padding: 10px 15px; 
+    font-size: 1em; 
+    font-weight: bold; 
+    color: white; 
+    background-color: #00796b; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
 
-form button:hover {}
+/* Hover Effect for Submit Button */
+form button:hover {
+    background-color: #004d40; 
+}
+
+
+.thank-you-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 2px solid #00796b;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin: auto; /* Center the container horizontally */
+    margin-top: 50px; /* Add vertical spacing */
+}
+
+
+.thank-you-container h1 {
+    color: #00796b;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Newsreader", serif;
+}
+
+
+.thank-you-container p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "Newsreader", serif;
+}
+
+
+.thank-you-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #00796b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+
+.thank-you-container a:hover {
+    background-color: #004d40;
+}
+
+

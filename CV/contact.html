@@ -18,29 +18,37 @@
         <p>Prince Ave, Athens, GA 30601 &bull; +1 404 513 6425 &bull; doruk@uga.edu</p>
     </section>
     
-    <hr>
-    <section>
-    <form action="http://127.0.0.1:5500/CV/thankyou.html" method="post">
-        <!-- Redirect to thankyou.html after submission -->
-        <input type="hidden" name="_redirect" value="thankyou.html">
-
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email: </label>
-        <input type="email" id="email" email="email"required>
-        <label for="message">Message: </label>
-        <textarea id="message" name="message" style="width:300px;height:100px;"></textarea>
-        <button type="submit">Submit</button>
-    </form>
+    <section class="one-col">
+        <form action="https://formsubmit.co/dorukbeduk@gmail.com" method="POST">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+    
+            <!-- Use your absolute local URL for the thank-you page -->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/CV/thankyou.html">
+    
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <input type="hidden" name="_captcha" value="false">
+    
+            <button type="submit">Submit</button>
+        </form>
     </section>
+    
+    
+    
 
     <section>
-    <footer>
-        <p>
-            <a href="index.html"> &copy; Doruk Beduk </a> &#8226;
-            <a href="https://www.linkedin.com/in/dorukbeduk/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
-        </p>
-    </footer>
+        <footer>
+            <p>
+                <a href="index.html"> &copy; Doruk Beduk </a> &#8226;
+                <a href="https://www.linkedin.com/in/dorukbeduk/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+            </p>
+        </footer>
     </section>
 
 </body>
